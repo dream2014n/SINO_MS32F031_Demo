@@ -35,8 +35,9 @@
 #define LED_Port  GPIOB
 #define LED1_Pin   MS32_GPIO_PIN_9
 #define LED1_ON()                   MS32_GPIO_SetOutputPin(LED_Port,LED1_Pin) 
+#define UART_TX_ON()                   MS32_GPIO_SetOutputPin(GPIOA,MS32_GPIO_PIN_9) 
 #define LED1_OFF()                  MS32_GPIO_ResetOutputPin(LED_Port,LED1_Pin)  
-#define LED1_TOGGLE()               MS32_GPIO_TogglePin(LED_Port,LED1_Pin)      
+#define UART_TX_TOGGLE()               MS32_GPIO_TogglePin(GPIOA,MS32_GPIO_PIN_9)      
 
 #define LED2_Pin   MS32_GPIO_PIN_8
 #define LED2_ON()                   MS32_GPIO_SetOutputPin(LED_Port,LED2_Pin) 
