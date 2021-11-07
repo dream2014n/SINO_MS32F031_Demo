@@ -3,7 +3,7 @@
 .\objects\ms32f0xx_exti.o: ..\..\chip\ms32f0xx\include\ms32f0xx.h
 .\objects\ms32f0xx_exti.o: ..\..\chip\ms32f0xx\include\ms32f031.h
 .\objects\ms32f0xx_exti.o: ..\..\core\core_cm0.h
-.\objects\ms32f0xx_exti.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ms32f0xx_exti.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ms32f0xx_exti.o: ..\..\core\cmsis_version.h
 .\objects\ms32f0xx_exti.o: ..\..\core\cmsis_compiler.h
 .\objects\ms32f0xx_exti.o: ..\..\core\cmsis_armcc.h

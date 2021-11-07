@@ -3,7 +3,7 @@
 .\objects\systick_delay.o: ..\..\chip\ms32f0xx\include\ms32f0xx.h
 .\objects\systick_delay.o: ..\..\chip\ms32f0xx\include\ms32f031.h
 .\objects\systick_delay.o: ..\..\core\core_cm0.h
-.\objects\systick_delay.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\systick_delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\systick_delay.o: ..\..\core\cmsis_version.h
 .\objects\systick_delay.o: ..\..\core\cmsis_compiler.h
 .\objects\systick_delay.o: ..\..\core\cmsis_armcc.h

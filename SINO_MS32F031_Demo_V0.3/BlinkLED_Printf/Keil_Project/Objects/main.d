@@ -1,10 +1,10 @@
 .\objects\main.o: ..\system\main.c
 .\objects\main.o: ..\system\system_define.h
-.\objects\main.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\..\chip\ms32f0xx\include\ms32f0xx.h
 .\objects\main.o: ..\..\chip\ms32f0xx\include\ms32f031.h
 .\objects\main.o: ..\..\core\core_cm0.h
-.\objects\main.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: ..\..\core\cmsis_version.h
 .\objects\main.o: ..\..\core\cmsis_compiler.h
 .\objects\main.o: ..\..\core\cmsis_armcc.h

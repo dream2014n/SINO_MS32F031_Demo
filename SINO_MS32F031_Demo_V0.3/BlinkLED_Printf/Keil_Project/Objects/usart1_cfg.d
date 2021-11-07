@@ -3,7 +3,7 @@
 .\objects\usart1_cfg.o: ..\..\chip\ms32f0xx\include\ms32f0xx.h
 .\objects\usart1_cfg.o: ..\..\chip\ms32f0xx\include\ms32f031.h
 .\objects\usart1_cfg.o: ..\..\core\core_cm0.h
-.\objects\usart1_cfg.o: D:\Programs\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart1_cfg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart1_cfg.o: ..\..\core\cmsis_version.h
 .\objects\usart1_cfg.o: ..\..\core\cmsis_compiler.h
 .\objects\usart1_cfg.o: ..\..\core\cmsis_armcc.h
