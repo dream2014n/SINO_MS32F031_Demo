@@ -59,17 +59,17 @@ int main(void)
   
     SysTick_Init();
     GPIO_Initialization();
-    USART1_UART_Init();
+//    USART1_UART_Init();
   
     LED1_ON(); 
-    LED2_OFF(); 
+//    LED2_OFF(); 
     printf("\r\n*****UART Example*****\r\n");
   
     while(1) 
     {
         SysTick_Ms(LED_BLINK_HALF_PRE);
         LED1_TOGGLE();
-        LED2_TOGGLE();
+//        LED2_TOGGLE();
         count++;
         printf("\r\n-----running count:%d",count);
     }

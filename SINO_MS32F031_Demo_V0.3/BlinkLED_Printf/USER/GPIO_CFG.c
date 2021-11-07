@@ -33,16 +33,17 @@ void GPIO_Initialization(void)
 {
     MS32_GPIO_InitTypeDef  GPIO_InitStruct;
     
-    MS32_AHB1_GRP1_EnableClock(MS32_AHB1_GRP1_PERIPH_GPIOB);
+    MS32_AHB1_GRP1_EnableClock(MS32_AHB1_GRP1_PERIPH_GPIOA);
 
     MS32_GPIO_StructInit(&GPIO_InitStruct);    
-    GPIO_InitStruct.Pin = LED1_Pin | LED2_Pin;
+//    GPIO_InitStruct.Pin = LED1_Pin | LED2_Pin;
+	GPIO_InitStruct.Pin = MS32_GPIO_PIN_9;
     GPIO_InitStruct.Mode = MS32_GPIO_MODE_OUTPUT;
     GPIO_InitStruct.OutputType = MS32_GPIO_OUTPUT_PUSHPULL;
     GPIO_InitStruct.Speed = MS32_GPIO_SPEED_HIGH;
     GPIO_InitStruct.Pull = MS32_GPIO_PULL_UP;
     GPIO_InitStruct.Alternate = MS32_GPIO_AF_0;
-    MS32_GPIO_Init(LED_Port,&GPIO_InitStruct);    
+    MS32_GPIO_Init(GPIOB,&GPIO_InitStruct);    
 }
 
 /******************************** END OF FILE *********************************/

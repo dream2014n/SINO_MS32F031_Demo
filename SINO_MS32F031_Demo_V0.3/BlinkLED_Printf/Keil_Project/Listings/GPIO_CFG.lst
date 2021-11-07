@@ -40207,12 +40207,13 @@ Nvoid GPIO_Initialization(void)
 N{
 N    MS32_GPIO_InitTypeDef  GPIO_InitStruct;
 N    
-N    MS32_AHB1_GRP1_EnableClock(MS32_AHB1_GRP1_PERIPH_GPIOB);
-X    MS32_AHB1_GRP1_EnableClock((0x1UL << (18U)));
+N    MS32_AHB1_GRP1_EnableClock(MS32_AHB1_GRP1_PERIPH_GPIOA);
+X    MS32_AHB1_GRP1_EnableClock((0x1UL << (17U)));
 N
 N    MS32_GPIO_StructInit(&GPIO_InitStruct);    
-N    GPIO_InitStruct.Pin = LED1_Pin | LED2_Pin;
-X    GPIO_InitStruct.Pin = (0x00000200U) | (0x00000100U);
+N//    GPIO_InitStruct.Pin = LED1_Pin | LED2_Pin;
+N	GPIO_InitStruct.Pin = MS32_GPIO_PIN_9;
+X	GPIO_InitStruct.Pin = (0x00000200U);
 N    GPIO_InitStruct.Mode = MS32_GPIO_MODE_OUTPUT;
 X    GPIO_InitStruct.Mode = (0x1UL << (0U));
 N    GPIO_InitStruct.OutputType = MS32_GPIO_OUTPUT_PUSHPULL;
@@ -40223,7 +40224,7 @@ N    GPIO_InitStruct.Pull = MS32_GPIO_PULL_UP;
 X    GPIO_InitStruct.Pull = (0x1UL << (0U));
 N    GPIO_InitStruct.Alternate = MS32_GPIO_AF_0;
 X    GPIO_InitStruct.Alternate = (0x0000000U);
-N    MS32_GPIO_Init(LED_Port,&GPIO_InitStruct);    
+N    MS32_GPIO_Init(GPIOB,&GPIO_InitStruct);    
 X    MS32_GPIO_Init(((GPIO_TypeDef *) ((0x40000000UL + 0x08000000UL) + 0x00000400UL)),&GPIO_InitStruct);    
 N}
 N

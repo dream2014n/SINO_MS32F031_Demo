@@ -41510,12 +41510,11 @@ N    uint32_t count=0;
 N  
 N    SysTick_Init();
 N    GPIO_Initialization();
-N    USART1_UART_Init();
+N//    USART1_UART_Init();
 N  
 N    LED1_ON(); 
 X    MS32_GPIO_SetOutputPin(((GPIO_TypeDef *) ((0x40000000UL + 0x08000000UL) + 0x00000400UL)),(0x00000200U)); 
-N    LED2_OFF(); 
-X    MS32_GPIO_ResetOutputPin(((GPIO_TypeDef *) ((0x40000000UL + 0x08000000UL) + 0x00000400UL)),(0x00000100U)); 
+N//    LED2_OFF(); 
 N    printf("\r\n*****UART Example*****\r\n");
 N  
 N    while(1) 
@@ -41524,8 +41523,7 @@ N        SysTick_Ms(LED_BLINK_HALF_PRE);
 X        SysTick_Ms(200);
 N        LED1_TOGGLE();
 X        MS32_GPIO_TogglePin(((GPIO_TypeDef *) ((0x40000000UL + 0x08000000UL) + 0x00000400UL)),(0x00000200U));
-N        LED2_TOGGLE();
-X        MS32_GPIO_TogglePin(((GPIO_TypeDef *) ((0x40000000UL + 0x08000000UL) + 0x00000400UL)),(0x00000100U));
+N//        LED2_TOGGLE();
 N        count++;
 N        printf("\r\n-----running count:%d",count);
 N    }
